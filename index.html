@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./src/style/style-index.css" />
     <link rel="stylesheet" href="./src/style/responsive.css" />
     <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
-    <title>Вики B-Day</title>
+    <title>Вики</title>
 </head>
 
-<body class="site">
-    <main class="site-content">
-        <div class="responsive-site">
+<body>
+    <main>
+        <section class="nav">
             <h1>It's a party!</h1>
             <p class="nav-line"></p>
             <h2>Вики става на 1X!</h2>
@@ -23,45 +23,54 @@
                 <i class="fa-solid fa-location-dot"></i> Място <i class="fa-regular fa-calendar-days"></i> Дата <i
                     class="fa-regular fa-clock"></i> Час
             </p>
+            <p class="nav-line"></p>
+            <section id="rsvp">
+                <section class="rsvp-wrapper">
+                    <article>
+                        <h3>Ще присъстваш ли?</h3>
+                    </article>
+                    <section class="rsvp-form-wrapper">
+                        <form action="https://api.staticforms.xyz/submit" method="post" id="rsvp-form">
+                            <input type="hidden" name="accessKey" value="a7716f97-66c2-49ba-b8e7-0cd4702baac2" />
     
-            <section class="rsvp">
-                <form action="https://api.staticforms.xyz/submit" method="post" id="rsvp-form">
-                    <input type="hidden" name="accessKey" value="c8153228-dab6-4f44-aa17-38e7ad054df7" />
-                    <p>Ще присъстваш ли?</p>
-                    <div class="rsvp-form-firstName">
-                        <label for="$name">Име</label>
-                        <input type="text" name="$name" required placeholder="Твоето име" />
-                    </div>
-    
-                    <div class="rsvp-form-attending">
-                        
-                        <div class="rsvp-form-attending-outer-group">
-                            <div class="rsvp-form-attending-inner-group">
-                                <input type="radio" id="yes" name="$attending" value="Yes" />
-                                <label for="$attending-Yes">Приемам</label>
+                            <div class="rsvp-form-firstName">
+                                <label for="$firstName">Име</label>
+                                <input type="text" name="$firstName" required placeholder="Твоето име" />
                             </div>
-                            <div class="rsvp-form-attending-inner-group">
-                                <input type="radio" id="no" name="$attending" value="No" />
-                                <label for="$attending-No">Отказвам</label>
-                            </div>
-                        </div>
-                    </div>
     
-                    <div class="rsvp-btns">
-                        <input type="submit" value="ИЗПРАЩАНЕ" onclick='alert("Благодаря!")'/>
-                        <input type="hidden" name="redirectTo" value="hhttps://viki-bday.netlify.app/">
-                        <button onclick="reset()" id="clearForm">ИЗЧИСТИ</button>
-                    </div>
-                </form>
+                            <div class="rsvp-form-attending">
+                                <div class="rsvp-form-attending-outer-group">
+                                    <div class="rsvp-form-attending-inner-group">
+                                        <input type="radio" id="yes" name="$attending" value="Yes" />
+                                        <label for="$attending-Yes">Приемам</label>
+                                    </div>
+                                    <div class="rsvp-form-attending-inner-group">
+                                        <input type="radio" id="no" name="$attending" value="No" />
+                                        <label for="$attending-No">Отказвам</label>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+                            <div class="rsvp-btns">
+                                <input type="submit" value="ИЗПРАЩАНЕ" />
+                                <input type="hidden" name="redirectTo" value="https://rosiandviktor.netlify.app/">
+                                <button onclick="reset()" id="clearForm">ИЗЧИСТИ</button>
+                            </div>
+                        </form>
+                    </section>
+                </section>
             </section>
-        </div>
-      
+        </section>
+
+       
+
     </main>
 
-
-    <!--<footer>
+  <footer>
         <p>made with <i class="fa-regular fa-heart"></i> by Vicky
-    </footer>-->
+    </footer>   
 </body>
 
 </html>
