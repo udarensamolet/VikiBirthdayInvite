@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/style-index.css" />
+    <link rel="stylesheet" href="./src/style/responsive.css" />
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
+    <title>Вики</title>
+</head>
+
+<body class="site">
+    <main class="site-content">
+        <div class="responsive-site">
+            <h1>It's a party!</h1>
+            <p class="nav-line"></p>
+            <h2>Вики става на 1X!</h2>
+            <p class="invite">Бързо се стегни, </p>
+            <p class="invite">за партито на Вики се приготви!</p>
+            <p class="details-info">
+                <i class="fa-solid fa-location-dot"></i> Място <i class="fa-regular fa-calendar-days"></i> Дата <i
+                    class="fa-regular fa-clock"></i> Час
+            </p>
+    
+            <section class="rsvp">
+                <form action="https://api.staticforms.xyz/submit" method="post" id="rsvp-form">
+                    <input type="hidden" name="accessKey" value="c8153228-dab6-4f44-aa17-38e7ad054df7" />
+                    <p>Ще присъстваш ли?</p>
+                    <div class="rsvp-form-firstName">
+                        <label for="$name">Име</label>
+                        <input type="text" name="$name" required placeholder="Твоето име" />
+                    </div>
+    
+                    <div class="rsvp-form-attending">
+                        
+                        <div class="rsvp-form-attending-outer-group">
+                            <div class="rsvp-form-attending-inner-group">
+                                <input type="radio" id="yes" name="$attending" value="Yes" />
+                                <label for="$attending-Yes">Приемам</label>
+                            </div>
+                            <div class="rsvp-form-attending-inner-group">
+                                <input type="radio" id="no" name="$attending" value="No" />
+                                <label for="$attending-No">Отказвам</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="rsvp-btns">
+                        <input type="submit" value="ИЗПРАЩАНЕ" onclick='alert("Благодаря!")'/>
+                        <input type="hidden" name="redirectTo" value="https://rosiandviktor.netlify.app/">
+                        <button onclick="reset()" id="clearForm">ИЗЧИСТИ</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+      
+    </main>
+
+
+    <!--<footer>
+        <p>made with <i class="fa-regular fa-heart"></i> by Vicky
+    </footer>-->
+</body>
+
+</html>
