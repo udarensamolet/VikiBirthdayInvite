@@ -12,125 +12,176 @@ body, html{
   min-width:100%;
 }
 
-footer {
-  text-align: center;
-  background-color: white;
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-}
 
 body {
   padding: 0;
   margin: 0;
+  color: white;
 }
 
-.site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+footer {
+  background-color: white;
+  color:#FF5C78;
+  text-align: center;
 }
 
-.site-content {
-  flex: 1;
+.nav{
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  padding-bottom: 1.5rem;
+}
+
+h1{
   padding: 0;
+  padding-top: 3rem;
   margin: 0;
-  color: #CEA76E;
-  background-image: url("../img/background-home-large.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-
-h1 {
+  font-size: 15rem;
   text-align: center;
-  font-size: 7rem;
-  padding-top: 4.5rem;
-  margin-bottom: 0.7rem;
 }
 
-.nav-line{
-  border-top: 5px solid #CEA76E;
-  margin-left: 23rem;
-  margin-right: 23rem;
+.nav-line {
+  border-top: 5px solid white;
+  margin: 5rem 15rem;
 }
 
-h2 {
+h2{
+  padding: 0;
+  padding-top: 1rem;
+  margin: 0;
+  font-size: 15rem;
   text-align: center;
-  font-size: 5rem;
-  margin-top: 0.7rem;
-  margin-bottom: 1.3rem;
 }
 
 .invite{
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0 auto;
 }
 
 .details-info {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
+  margin: 1rem auto;
 }
 
-.rsvp{
+#rsvp {
+  text-align: center;
+  color: white;
+  background: url("../img/background-home.jpg");
+  background-size: cover;
+  font-size: 1.2rem;
+  padding: 3rem 0 3rem 0;
+}
+
+.rsvp-wrapper {
+  background-color: rgba(250, 235, 215, 0.6);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 10px rgba(250, 235, 215, 0.5);
+  margin: 0 27rem;
+  padding: 2.5rem 0 2.5rem;
+}
+
+.rsvp-wrapper-line {
+  border-top: 3px solid #FF5C78;
+  margin: 1.1rem 18rem 2rem;
+}
+
+.rsvp-wrapper h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+#rsvp-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
 }
 
-.rsvp p{
-  margin: 0 1rem;
-  font-size: 1.9rem;
-}
 
-.rsvp-form-attending-outer-group,
 .rsvp-form-firstName{
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+
 }
-.rsvp-form-attending p {
-  margin: 0 0.7rem;
+
+
+.rsvp-form-firstName label,
+.rsvp-form-firstName input{
+    margin-bottom: 0.5rem;
+}
+
+.rsvp-form-firstName label,
+.rsvp-form-attending p{
+   font-weight: 900;
+}
+
+
+.rsvp-form-firstName input{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
 }
 
 input[type="text"]:focus{
-  outline: none;
-  border: 2px solid goldenrod;
+    outline: none;
+    border: 2px solid #FF5C78;
+}
+
+.rsvp-form-attending{
+    padding-top: 0rem;
+}
+
+.rsvp-form-attending p{
+    margin-bottom: 0.5rem;
+}
+
+.rsvp-form-attending-outer-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 
 .rsvp-btns input[type="submit"]{
-  color: goldenrod;
-  background-color: #FFF7F5;
-  border: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 900;
+    color: #FF5C78;
+    background-color: #FAECBF;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
 }
 
-
 .rsvp-btns{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-top: 0.5rem;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .rsvp-btns button{
-  color: goldenrod;
-  background-color: #FFF7F5;
-  border: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 900;
+    color: #FF5C78;
+    background-color: #FAECBF;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 900;
 }
+
 .rsvp-btns input[type="submit"]:hover,
 .rsvp-btns button:hover{
     cursor: pointer;
